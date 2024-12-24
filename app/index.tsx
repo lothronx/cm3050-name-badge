@@ -1,12 +1,15 @@
+// start of my code
 import * as ScreenOrientation from "expo-screen-orientation";
 import { Text, View, SafeAreaView, StyleSheet, Animated } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import { useEffect, useRef } from "react";
+//end of my code
 
 export default function Index() {
   // Lock screen orientation
   ScreenOrientation.lockAsync(ScreenOrientation.OrientationLock.LANDSCAPE_LEFT);
 
+  // start of my code
   // FadeInOpacity starts at 0 and smoothly increases to 1 over the course of 1 second
   const fadeInOpacity = useRef(new Animated.Value(0)).current;
   useEffect(() => {
@@ -36,8 +39,10 @@ export default function Index() {
     </SafeAreaView>
   );
 }
+//end of my code
 
 const styles = StyleSheet.create({
+  // start of my code
   container: {
     flex: 1,
   },
@@ -49,6 +54,8 @@ const styles = StyleSheet.create({
     bottom: 0,
     backgroundColor: "red", // fallback color
   },
+  // end of my code
+
   contentContainer: {
     flex: 1,
     justifyContent: "center",
@@ -81,6 +88,8 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontWeight: "bold",
   },
+
+  // start of my code
   shadow: {
     elevation: 5,
     shadowColor: "black",
@@ -88,4 +97,5 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.25,
     shadowRadius: 10,
   },
+  // end of my code
 });
