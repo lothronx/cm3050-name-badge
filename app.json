@@ -51,6 +51,12 @@
         "projectId": "00954f9c-7168-4c9f-8f84-c8e79f5d5c14"
       }
     },
-    "owner": "lothron"
+    "owner": "lothron",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/00954f9c-7168-4c9f-8f84-c8e79f5d5c14"
+    }
   }
 }
